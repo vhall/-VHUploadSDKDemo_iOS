@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pk7-oV-Be1">
+                                <rect key="frame" x="107" y="348.5" width="200" height="30"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Twr-1d-626"/>
+                                </constraints>
+                                <state key="normal" title="进入上传"/>
+                                <connections>
+                                    <action selector="enterBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4O7-48-Gbe"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AppKey:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Je-W3-Rja">
+                                <rect key="frame" x="50" y="94" width="64" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SecretKey:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="j1t-5r-Uj2">
+                                <rect key="frame" x="50" y="168.5" width="83" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请填写微吼直播SecretKey" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Jxq-OB-nyt">
+                                <rect key="frame" x="50" y="199.5" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请填写微吼直播AppKey" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Eva-5F-sMD">
+                                <rect key="frame" x="50" y="124.5" width="314" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="8Je-W3-Rja" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="1f9-bI-Mjd"/>
+                            <constraint firstItem="Pk7-oV-Be1" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="BfD-Me-BYZ"/>
+                            <constraint firstItem="Jxq-OB-nyt" firstAttribute="top" secondItem="j1t-5r-Uj2" secondAttribute="bottom" constant="10" id="Dlc-7K-ow9"/>
+                            <constraint firstItem="Eva-5F-sMD" firstAttribute="top" secondItem="8Je-W3-Rja" secondAttribute="bottom" constant="10" id="Snx-Tv-O8f"/>
+                            <constraint firstItem="j1t-5r-Uj2" firstAttribute="top" secondItem="Eva-5F-sMD" secondAttribute="bottom" constant="10" id="UGj-vr-XmH"/>
+                            <constraint firstItem="j1t-5r-Uj2" firstAttribute="leading" secondItem="8Je-W3-Rja" secondAttribute="leading" id="VPW-Lz-ln8"/>
+                            <constraint firstItem="Eva-5F-sMD" firstAttribute="leading" secondItem="8Je-W3-Rja" secondAttribute="leading" id="X5g-iT-5vv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Eva-5F-sMD" secondAttribute="trailing" constant="50" id="Y9a-H3-kfa"/>
+                            <constraint firstItem="Pk7-oV-Be1" firstAttribute="top" secondItem="Jxq-OB-nyt" secondAttribute="bottom" constant="115" id="cCE-wF-AYd"/>
+                            <constraint firstItem="8Je-W3-Rja" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="nnT-Gj-zaS"/>
+                            <constraint firstItem="Jxq-OB-nyt" firstAttribute="leading" secondItem="j1t-5r-Uj2" secondAttribute="leading" id="rFK-I8-Xv7"/>
+                            <constraint firstItem="Jxq-OB-nyt" firstAttribute="trailing" secondItem="Eva-5F-sMD" secondAttribute="trailing" id="zWo-rD-JiU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="appKeyTextF" destination="Eva-5F-sMD" id="xuu-5X-88N"/>
+                        <outlet property="appSecretKeyTextF" destination="Jxq-OB-nyt" id="Eom-h0-EbA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="63.768115942028992" y="75.669642857142847"/>
+        </scene>
+    </scenes>
+</document>
